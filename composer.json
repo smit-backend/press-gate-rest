@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/press-gate-rest",
+    "description": "Hardened WordPress REST API security plugin locking default endpoints while exposing cached, secured routes for headless apps.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\Pressgaterest\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\Pressgaterest\\PackageServiceProvider"
+            ]
+        }
+    }
+}
